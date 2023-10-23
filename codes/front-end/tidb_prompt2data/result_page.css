@@ -1,0 +1,73 @@
+.response-container {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.response-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #2b2b3b;
+    color: #ffffff;
+    position: relative;
+}
+
+.left-top,
+.bottom-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.right-top,
+.bottom-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.middle-line {
+    position: absolute;
+    border-left: 1px solid transparent; /* Transparent line */
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribute-card {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: #21212c;
+    width: 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.value-card {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: #44445a;
+    width: 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Additional styles for better readability */
+.attribute-card {
+    font-weight: bold;
+}
+
+/* Add hover effect to response cards */
+.response-card:hover {
+    background-color: #3f3f4f;
+    transition: background-color 0.3s ease;
+}

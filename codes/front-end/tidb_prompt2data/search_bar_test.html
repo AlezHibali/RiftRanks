@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!-- <script src="./tournament_api.js"></script> -->
+    </head>
+    <body>
+        <div data-w-id="eaa9b713-2916-3c9d-d7ef-5e38f5e44a70" style="opacity: 1;"><form action="/search" class="w-form"><input type="search" class="input w-input" maxlength="256" name="query" placeholder="Search…" id="search-2" required=""><input type="submit" value="Search" class="btn-primary large w-button"></form></div>    
+        <script>
+            const searchForm = document.querySelector('.w-form');
+
+            searchForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const searchBar = document.getElementById('search-2');
+                const query = searchBar.value;
+
+                // Construct the URL with the query parameter and redirect the user
+                const redirectUrl = `https://riftranks.webflow.io/search?query=${encodeURIComponent(query)}`;
+                window.location.href = redirectUrl;
+            });
+
+        </script>
+    </body>
+</html>
+

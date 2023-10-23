@@ -1,0 +1,48 @@
+
+new Chart(document.getElementById("radar-chart"), {
+    type: 'radar',
+    data: {
+      labels: ["Champions Killed/Game", "Epic Monster Killed/Game", "First Baron Rate", "Building Destoyed/Game", "Vision Score", "Winning Rate"],
+      datasets: [
+        {
+          label: "T1",
+          fill: true,
+          backgroundColor: "rgba(179,181,198,0.2)",
+          borderColor: "rgba(179,181,198,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(179,181,198,1)",
+          data: [43.53472614,78.25203252,61,74.38190426,67.7027938,61]
+        },
+      ]
+    },
+    ticks: {
+          beginAtZero: true,
+          min: 0,
+          max: 100, // Assuming you want a range from 0 to 100
+          stepSize: 10 // This will create a step size of 20. Adjust this based on your desired range divisions
+        },
+   options: {
+      title: {
+        display: true,
+      },
+      scale: {
+        gridLines: {
+          color: "white",
+          lineWidth: 2
+        },
+        angleLines: {
+          color: "white"
+        },
+        pointLabels: {
+          fontSize: 18,
+          fontColor: "white"
+        }
+      },
+      legend: {
+        labels: {
+          fontSize: 18,
+          fontColor: "white"
+        }
+      }
+    }
+});

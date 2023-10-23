@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <!-- <script src="./tournament_api.js"></script> -->
+    </head>
+    <body>
+        <div data-w-id="eaa9b713-2916-3c9d-d7ef-5e38f5e44a70" style="opacity: 1;"><form action="/search" class="w-form"><input type="search" class="input w-input" maxlength="256" name="query" placeholder="Search…" id="search-2" required=""><input type="submit" value="Search" class="btn-primary large w-button"></form></div>    
+        <script>
+            const searchForm = document.querySelector('.w-form');
+
+            searchForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const searchBar = document.getElementById('search-2');
+                const query = searchBar.value;
+
+                const apiUrl = 'https://eu-central-1.data.tidbcloud.com/api/v1beta/app/chat2query-YdBxnPzY/endpoint/chat2data';
+                const publicKey = 'q472yi96';
+                const privateKey = '6bc870a3-43f7-4dbb-a7f8-b97eaf50a565';
+
+                const credentials = `${publicKey}:${privateKey}`;
+                const encodedCredentials = btoa(credentials);
+
+                const data = {
+                    cluster_id: '1379661944646225457',
+                    database: 'test',
+                    tables: ['Riot_AWS_team_ranking'],
+                    instruction: query,
+                };
+
+                fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Basic ${encodedCredentials}`
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json())
+                .then(apiResponse => {
+                    const columns = apiResponse.data.columns.map(column => column.col);
+                    const rows = apiResponse.data.rows.map(row => ({
+                        team_name: row.team_name,
+                        winning_rate: row.winning_rate
+                    }));
+
+                    // Log the rows and columns
+                    console.log('Columns:', columns);
+                    console.log('Rows:', rows);
+
+                    // Construct the URL with the query parameter and redirect the user
+                    const redirectUrl = `https://riftranks.webflow.io/search?query=${encodeURIComponent(query)}`;
+                    window.location.href = redirectUrl;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+
+            
+        </script>
+    </body>
+</html>
+

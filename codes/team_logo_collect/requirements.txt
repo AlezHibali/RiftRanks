@@ -1,0 +1,6 @@
+googlesearch-python
+requests
+Pillow
+pytesseract
+cairosvg
+cairocffi
