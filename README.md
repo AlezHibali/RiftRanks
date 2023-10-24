@@ -7,7 +7,7 @@ Methodology Details could be found at `/src/docs/report_pca.docx` and `/src/docs
 
 More details about the project could be found here: https://devpost.com/software/rift-ranks
 
-Demo Video link: https://www.youtube.com/watch?v=qKKOnt6Lpv4
+Demo Video link: [https://www.youtube.com/watch?v=qKKOnt6Lpv4](https://youtu.be/e5jdRUxmruI)
 
 
 ### Overview
