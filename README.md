@@ -3,6 +3,9 @@
 
 Welcome to RiftRanks, your go-to platform for discovering the latest and most accurate rankings of professional League of Legends teams. This project is dedicated to providing gamers and esports enthusiasts with up-to-date and reliable information about their favorite teams, backed by advanced technology and seamless integration of various services.
 
+More details could be found here: 
+Demo Video link: 
+
 ### Overview
 
 RiftRanks utilizes a robust tech stack to deliver its services:
