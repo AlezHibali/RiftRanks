@@ -1,23 +1,47 @@
-# Welcome to RiftRanks - Gaming Rankings Powered by AWS and PCA
+## RiftRanks: League of Legends Team Rankings
 
-Hey there, fellow gamers! 👋 Welcome to **RiftRanks**, where we're redefining League of Legends rankings with a touch of magic. Ever wondered what's behind our seamless gaming experience? Let's peel back the curtain and show you the awesomeness!
+Welcome to RiftRanks, your go-to platform for discovering the latest and most accurate rankings of professional League of Legends teams. This project is dedicated to providing gamers and esports enthusiasts with up-to-date and reliable information about their favorite teams, backed by advanced technology and seamless integration of various services.
 
-## What's Inside RiftRanks?
+### Overview
 
-At **RiftRanks**, we've teamed up with **Amazon Web Services (AWS)** to create a gaming platform that's fast, reliable, and just plain awesome. Here's a sneak peek into what makes us tick:
+RiftRanks utilizes a robust tech stack to deliver its services:
 
-### 🚀 **Route 53 - Navigating Your Gaming Universe**
-Route 53 serves as our trusty guide in the gaming universe, ensuring our domain names are registered and ready for action. 
+- **Amazon Web Services (AWS):** We leverage AWS services including EC2, Route53, and S3 to power our platform. EC2 ensures our Flask APIs run 24/7, guaranteeing real-time data. Route53 handles domain registration and links to EC2's IPv4 address, enabling secure HTTPS connections for our APIs. S3 stores our datasets, and in conjunction with TiDB, facilitates our 'Prompt2Data' search feature.
 
-### 💻 **EC2 - Your Virtual Gaming Companion**
-Meet EC2, our virtual gaming companion. It not only hosts our game but also syncs seamlessly with Route 53. This means our domain names are always accurate and ready to roll whenever you hit that play button.
+- **Principal Component Analysis (PCA):** Our ranking system is based on PCA, allowing us to process vast amounts of data from the past three years of League of Legends matches, providing accurate and insightful team rankings.
 
-### ☁️ **S3 and TiDB - Managing the Gaming Data**
-Behind the scenes, S3 and TiDB are the powerhouses managing our gaming data. S3 handles the heavy lifting, keeping everything organized, while TiDB adds that extra layer of finesse. Together, they power our slick 'Prompt2Data' search function, making finding the info you need a breeze.
+### Dependencies
 
-## How We Rank - The PCA Magic! 🎩✨
-Ever wondered how we create those awesome rankings? We use **Principal Component Analysis (PCA)** to dive deep into the last three years of League of Legends data. Crunching numbers and analyzing patterns, we craft rankings that are as accurate as they are exciting.
+- Flask
+- BeautifulSoup
+- Requests
+- TiDB
+- AWS SDKs (EC2, Route53, S3)
 
-Dive into the world of rankings at [https://riftranks.webflow.io](https://riftranks.webflow.io/) and witness gaming greatness like never before. Don't just play the game; transform your gaming journey with **RiftRanks**!
+### Installation
+
+No need to install, everything is deployed properly and can access the webpage directly [https://riftranks.webflow.io](https://riftranks.webflow.io/).
+
+### Usage
+
+Before visiting our website, it's crucial to run the API backend:
+
+```bash
+python app.py
+```
+
+This command will launch the backend, ensuring real-time data availability.
+
+Visit [https://riftranks.webflow.io](https://riftranks.webflow.io/) to experience our cutting-edge team rankings. Please note, for specific features such as favoriting teams or accessing personalized data, you may need to create an account.
+
+### Support and Feedback
+
+For any questions, issues, or feedback, don't hesitate to reach out to us via GitHub or email us at support@riftranks.com.
+
+### Acknowledgements
+
+We extend our gratitude to Amazon Web Services for empowering our platform and the League of Legends community. Your support has made RiftRanks possible.
+
+---
 
 Got questions, suggestions, or just want to chat about all things gaming? We're all ears! Reach out to us at [ali.daixin.tian@gmail.com](ali.daixin.tian@gmail.com).
