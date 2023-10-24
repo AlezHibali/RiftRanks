@@ -18,30 +18,16 @@ RiftRanks utilizes a robust tech stack to deliver its services:
 - TiDB
 - AWS SDKs (EC2, Route53, S3)
 
-### Installation
+### Installation & Usage
 
 No need to install, everything is deployed properly and can access the webpage directly [https://riftranks.webflow.io](https://riftranks.webflow.io/).
 
-### Usage
-
-Before visiting our website, it's crucial to run the API backend:
-
-```bash
-python app.py
-```
-
-This command will launch the backend, ensuring real-time data availability.
-
-Visit [https://riftranks.webflow.io](https://riftranks.webflow.io/) to experience our cutting-edge team rankings. Please note, for specific features such as favoriting teams or accessing personalized data, you may need to create an account.
-
 ### Support and Feedback
 
-For any questions, issues, or feedback, don't hesitate to reach out to us via GitHub or email us at support@riftranks.com.
+For any questions, issues, or feedback, don't hesitate to reach out to us at [ali.daixin.tian@gmail.com](ali.daixin.tian@gmail.com).
 
 ### Acknowledgements
 
 We extend our gratitude to Amazon Web Services for empowering our platform and the League of Legends community. Your support has made RiftRanks possible.
 
 ---
-
-Got questions, suggestions, or just want to chat about all things gaming? We're all ears! Reach out to us at [ali.daixin.tian@gmail.com](ali.daixin.tian@gmail.com).
