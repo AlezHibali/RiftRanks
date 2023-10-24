@@ -1,4 +1,5 @@
 ## RiftRanks: League of Legends Team Rankings
+![alt text](https://github.com/AlezHibali/RiftRanks/blob/main/src/images/home.png)
 
 Welcome to RiftRanks, your go-to platform for discovering the latest and most accurate rankings of professional League of Legends teams. This project is dedicated to providing gamers and esports enthusiasts with up-to-date and reliable information about their favorite teams, backed by advanced technology and seamless integration of various services.
 
