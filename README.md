@@ -19,6 +19,7 @@ RiftRanks utilizes a robust tech stack to deliver its services:
 - Flask
 - BeautifulSoup
 - Requests
+- sklearn
 - TiDB
 - AWS SDKs (EC2, Route53, S3)
 
