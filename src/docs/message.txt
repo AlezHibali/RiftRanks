@@ -1,0 +1,60 @@
+## Inspiration
+The inspiration for developing the LOL Global Ranking website was profoundly influenced by the vibrant, growing community of League of Legends players and fans scattered across the globe. Most of our team members are LOL players and we got inspired from OPGG platform. We discerned a distinct lack of comprehensive platforms that provide exhaustive, real-time insights into the rich tapestry of eSports teams, individual players, and the dynamically evolving tournament rankings. Our vision extended beyond creating a mere informational repository; we aspired to establish a nexus that seamlessly amalgamates detailed analytics, up-to-the-minute data, and an interactive space fostering a robust, engaged, and informed global community.
+
+## What it does
+1. LOL Global Ranking website offers extensive data, detailed analytics, and dynamic rankings.
+2. Users access team data, player statistics, and global/specific tournament rankings.
+3. Advanced filtering and search empower users to access tailored insights aligned with their interests.
+4. User-friendly webpage design.
+
+## How we built it
+###Data Loading and Caching:
+Loaded JSON data from the provided database.
+Implemented caching mechanisms to effectively manage and handle the vast data.
+Ensured swift and smooth data access on the local machine.
+
+###Data Mapping and Relational Structure:
+Systematically mapped teams to players, leagues, tournaments, and game data.
+Designed a meticulous relational structure for data integrity and holistic insights.
+Implemented dynamic player rating updates using the TrueSkill algorithm.
+
+###Data Transformation into CSV:
+Transformed loaded data into a comprehensive CSV file.
+CSV file serves as the foundation for subsequent analytical processes.
+Provided a generalized representation of all the data for further analysis.
+
+###Advanced Analytics Implementation:
+Implemented Principal Component Analysis (PCA) on the dataset.
+Enabled nuanced understanding and representation of the vast information in the dataset.
+Enhanced analytical capabilities for in-depth insights into the data.
+
+###Frontend Development Process:
+Utilized Webflow as the primary platform for designing the user interface.
+Integrated Jetboot app to support core functionalities and enhance user experience.
+Implemented custom functionalities using hand-written JavaScript code.
+Ensured seamless integration of custom JavaScript functions within the Webflow framework.
+
+###Deployment on EC2:
+Write Flask app for API calls in the javascript code embed in webpage
+Start Ubuntu instance and open http/https/ssh ports
+Utilize gunicorn and nginx to start a 24/7 service for FlaskAPI
+Get domain name from Route53, link to EC2 instance IPv4 addr, and get ssl certificate
+Modify nginx default file to make http redirect to https allowing our API to be HTTPS compatible
+
+## Challenges we ran into
+1. Managed and processed a massive and complex database of global teams and tournament details.
+2. Balanced website agility and responsiveness while handling vast amounts of data.
+3. Overcame challenges through innovative solutions, including advanced caching technologies to avoid downloading data in units of TB.
+4. First time using AWS services, configuring EC2 server and registering domain
+5. Algorithm researches and benchmark
+
+## What we learned
+1. Gained insights into efficient data management and innovative data retrieval technologies.
+2. Emphasized user-centric design principles, enriching functional attributes based on user feedback.
+3. Achieved a balance between quick results and statistical rigor through ranking algorithms.
+4. Procedure on deployment on EC2 service, including all steps to enable HTTPS connections.
+
+## What's next for Rift Ranks
+1. Focus on refining ranking algorithms for enhanced accuracy in reflecting player and team performances.
+2. Overhaul website's user experience, optimizing every element for intuitiveness, efficiency, and engagement.
+3. Aspire to create an exhilarating and rewarding user journey, transcending conventional boundaries of interaction.interaction, making the journey through the LOL Global Ranking website as exhilarating and rewarding as the gaming experience itself.
